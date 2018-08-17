@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>RecrutementTest</h1>
+  <app-post-component [postData]="posts" 
+  (sendingPostData)="onsending($event)"></app-post-component>
+  <hr>
+  <app-comment *ngIf="clicked" [clickComment] ="commentOfPost"></app-comment>
+
+

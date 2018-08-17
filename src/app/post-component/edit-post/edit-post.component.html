@@ -1,0 +1,34 @@
+
+<div>
+    <form  [formGroup]="editForm" (ngSubmit)="onselected()">
+  
+        <div class="form-group">
+          <label for="postId">postId</label>
+          <input type="number"  class="form-control" 
+          formControlName="postId"
+          name="postId"
+          id="postID" placeholder="PostId">
+        </div>
+         
+        <div class="form-group">
+            <label for="postTitle">postTitle</label>
+            <input type="text"  
+            class="form-control"  
+            id="postTitle" 
+            name="postTitle"
+            formControlName="postTitle"
+            placeholder="postTitle">
+          </div>
+          
+          <div class="form-group">
+              <label for="postAuthor">postAuthor</label>
+              <input type="text"
+              formControlName="postAuthor"   
+              name="postAuthor"
+              class="form-control" id="postAuthor" 
+               placeholder="postAuthor">
+           </div>
+           <button  type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      
+</div>
